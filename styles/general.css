@@ -1,0 +1,9 @@
+p {
+    font-family: Roboto, Arial;
+    margin-top: 0px;
+    margin-bottom: 0px;   /*to remove the default margin between paragraphs, so we can control the spacing with CSS*/
+}
+
+body {
+    margin: 0;
+}

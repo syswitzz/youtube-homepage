@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Exercise 12.3</title>
+        <style>
+            p {
+                font-family: Arial, Helvetica, sans-serif;
+                line-height: 6px;
+            }
+            .container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 400px;
+            }
+            .pfp {
+                width: 60px;
+                height: 60px;
+                object-fit: cover;
+                border-radius: 100px;
+            }
+            .follow-button {
+                padding: 9px 16px 9px 16px;
+                background-color: rgb(66, 103, 178);
+                color: white;
+                border: none;
+                font-size: 14px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .info {
+                flex: 1;
+                margin-left: 16px;
+            }
+            #name {
+                font-weight: bold;
+            }
+            #userinfo {
+                color: rgb(100, 100, 100);
+            }
+            #popular {
+                font-size: 14px;
+                color: rgb(100, 100, 100);
+            }
+        </style>
+    </head>
+    <body style="margin-bottom: 400px;">
+        <div>
+            <div class="container">
+                <img class="pfp" src="/exercise-images/cat.jpg" alt="oliver">
+                <div class="info">
+                    <p id="name">oliver</p>
+                    <p id="userinfo">the cat</p>
+                    <p id="popular">Popular</p>
+                </div>
+                <button class="follow-button">Follow</button>
+            </div>
+            <div class="container">
+                <img class="pfp" src="/exercise-images/cat2.jpg" alt="mimi">
+                <div class="info">
+                    <p id="name">mimi</p>
+                    <p id="userinfo">Sleepy Cat</p>
+                    <p id="popular">Popular</p>
+                </div>
+                <button class="follow-button">Follow</button>
+            </div>
+            <div class="container">
+                <img class="pfp" src="/exercise-images/dog.jpg" alt="rex">
+                <div class="info">
+                    <p id="name">rex</p>
+                    <p id="userinfo">Happy Bulldog</p>
+                    <p id="popular">Popular</p>
+                </div>
+                <button class="follow-button">Follow</button>
+            </div>
+        </div>
+    </body>
+</html>

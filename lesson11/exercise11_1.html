@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .username {
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+        .mutual-friend-text {
+            color: rgb(100, 100, 100);
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            column-gap: 16px;
+        }
+
+        .card-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .pfp-image {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .card-info {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            align-items: center;
+            column-gap: 8px;
+            margin-left: 8px;
+            margin-top: 6px;
+        }
+        .button {
+            padding: 8px 20px 8px 20px;
+            color: white;
+            font-size: 14px;
+            border: 0px;
+            border-radius: 4px;
+            background-color: rgb(24, 119, 242);
+            margin-left: 8px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        .card {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="card-grid">
+
+        <div class="card">
+            <img src="exercise-images/cat.jpg" alt="Oliver Image" class="card-image">
+            <p class="username">Oliver</p>
+            <div class="card-info">
+                <img src="exercise-images/dog2.jpg" alt="Dog 2 Image" class="pfp-image">
+                <p class="mutual-friend-text"> 2 mutual friends</p>
+            </div>
+            
+            <button class="button">Add Friend</button>
+        </div>
+
+        <div class="card">
+            <img src="exercise-images/cat2.jpg" alt="Mimi Image" class="card-image">
+            <p class="username">Mimi</p>
+            <div class="card-info">
+                <img src="exercise-images/dog2.jpg" alt="Dog 2 Image" class="pfp-image">
+                <p class="mutual-friend-text"> 5 mutual friends</p>
+            </div>
+
+            <button class="button">Add Friend</button>
+        </div>
+
+        <div class="card">
+            <img src="exercise-images/dog.jpg" alt="Rex Image" class="card-image">
+            <p class="username">Rex</p>
+            <div class="card-info">
+                <img src="exercise-images/dog2.jpg" alt="Dog 2 Image" class="pfp-image">
+                <p class="mutual-friend-text"> 1 mutual friend</p>
+            </div>
+
+            <button class="button">Add Friend</button>
+        </div>
+    </div>
+</body>
+</html>

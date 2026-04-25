@@ -1,0 +1,85 @@
+block elements take the entire line, eg, (paragraphs, divs) etc, even if you set width it still takes entire line.
+
+inline-block elements take as much space it needs not entire line. eg, images 
+
+inline elements are basically text elements, they appear within a line of text. eg, strong, underline
+
+css display property lets us change block elements to inline block
+
+div is just a box
+
+when we have multiple texts like video caption, channel name and video stats we want them to be on same line
+but while also not taking the entire line, so to solve this problem we put them in a contained so they take up 
+their entire line in container and not the entire page
+
+div is also a block element, but we can fix that by display: inline-block 
+div by default take 100% of the space
+
+images by default overflow, the container doesnt matter
+
+why grid over inline-block? grid maintains alignment much better
+
+the issue with images is that they always take their original shape even inside a container. for them to take the
+space of the container you have to set "width: 100%;"
+
+object-fit: Contain: Scales the image so that the entire image is visible within the container
+object-fit: Cover: Scales the image so that the entire container is filled.
+
+
+flexbox is similar to grid just a bit more flexible.
+.div {
+    display: flex;
+    flex-direction: row;
+}
+vertical alignment is maintained by default
+flex: 1 property is equivalent to 1fr in grid
+the layout in grid is more rigid like the size is defined in the outer div but here each div can be sized individually
+
+justify-content: center; # puts all items in center
+justify-content: start; # puts all items in start
+justify-content: space-between; # seperates item with equal space
+
+align-items: center/ start/ end/ stretch (default) - aligns the item in div either at top center or bottom or stretch it to fit the div
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.thumbnail{
+    width: 300px;   /*the heigh will auto adjust*/
+    height: 300px;
+    object-fit: contain; /*this decides what happens if the heigh and width doesnt match image ratio*/
+    object-position: bottom;
+    border-width: 2px;
+    border-color: red;
+    border-style: solid;
+}
+
+.search-bar{
+  font-size: 33px;
+  margin-left: 34px;
+}
+
+
+.channel-picture {
+  display: inline-block;
+  vertical-align: top;
+  width: 50px;
+}
+.video-info {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+}

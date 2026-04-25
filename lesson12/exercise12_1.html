@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Exercise 12.1</title>
+    </head>
+    <style>
+        .p {
+            margin: 0;
+        }
+        .text {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px;
+        }
+        .button {
+            background-color: rgb(20, 110, 227);
+            border: 0px;
+            width: 36px;
+            height: 24px;
+            border-radius: 14px;
+            color: white;
+        }
+        .outer-div {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 4px;
+        }
+        .card {
+            display: flex; 
+            flex-direction: row; 
+            justify-content: space-between; 
+            width: 300px;
+            align-items: center;
+        }
+    </style>
+    <body>
+        <div class="outer-div">
+            <div class="card">
+                <p class="text">Home</p>
+                <div>
+                    <button class="button">14</button>
+                </div>
+            </div>
+            <div class="card">
+                <p class="text">Notifications</p>
+                <div>
+                    <button class="button">3</button>
+                </div>
+            </div>
+            <div class="card">
+                <p class="text">Messages</p>
+                <div>
+                    <button class="button">5</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

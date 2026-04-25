@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid Layout</title>
+</head>
+<body>
+    <div style="
+        display: grid;
+        grid-template-columns: 100px 100px;
+    ">
+        <div style="background-color: lightblue;">
+            div 1
+            <p>this is a paragraph</p>
+        </div>
+        <div style="background-color: lightgreen;">
+            div 2
+        </div>
+    </div>
+
+    <div style="
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 100px 100px 200px;
+    ">
+        <div style="background-color: lightblue;">
+            div 1
+            <p>this is a paragraph</p>
+        </div>
+        <div style="background-color: lightgreen;">
+            div 2
+        </div>
+        <div style="background-color: lightpink;">
+            div 3
+        </div>
+        <div style="background-color: lightyellow;">
+            div 4
+        </div>
+    </div>
+
+    <div style="
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 100px 1fr;   /* 1fr means that this column will take up all the remaining space after allocating space for the first column */
+    ">
+        <div style="background-color: lightblue;">
+            div 1
+            <p>this is a paragraph</p>
+        </div>
+        <div style="background-color: lightgreen;">
+            div 2
+        </div>
+    </div>
+
+    <div style="
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    ">
+        <div style="background-color: lightblue;">
+            1fr
+        </div>
+        <div style="background-color: lightgreen;">
+            2fr
+        </div>
+    </div>
+
+    <div style="
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 30px;
+    ">
+        <div style="background-color: lightgreen; height: 200px;">
+            div 1
+        </div>
+        <div style="background-color: lightpink;">
+            div 2
+        </div>
+        <div style="background-color: lightyellow;">
+            div 3
+        </div>
+        <div style="background-color: lightgreen; height: 200px;">
+            div 1
+        </div>
+        <div style="background-color: lightpink;">
+            div 2
+        </div>
+        <div style="background-color: lightyellow;">
+            div 3
+        </div>
+    </div>
+</body>
+</html>
