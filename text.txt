@@ -42,12 +42,13 @@ justify-content: space-between; # seperates item with equal space
 align-items: center/ start/ end/ stretch (default) - aligns the item in div either at top center or bottom or stretch it to fit the div
 
 
+margin-left: -1px;
 
+box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05); (inside or outside, left right, top bottom, blur radius, color)
 
+flex-shrink: 0; - is a special property of flexbox that makes it not shrink no matter what. it will retain its defined width
 
-
-
-
+width: 0; - it makes the search bar (which has fix minimum width by default) shrink to max.
 
 
 
