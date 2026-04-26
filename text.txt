@@ -50,7 +50,7 @@ flex-shrink: 0; - is a special property of flexbox that makes it not shrink no m
 
 width: 0; - it makes the search bar (which has fix minimum width by default) shrink to max.
 
-
+overflow: hidden; - makes the box/element content flowing outside curved body disappear
 
 
 
