@@ -21,6 +21,7 @@
 }
 .thumbnail-row {
     margin-bottom: 12px;
+    position: relative;
 }
 .video-author,
 .video-stats {
@@ -36,4 +37,17 @@
     grid-template-columns: 1fr 1fr 1fr;   /* this creates a grid with 3 equal columns, and the video previews will automatically adjust their width to fit into these columns */
     column-gap: 16px;
     row-gap: 40px;
+}
+
+.video-time {
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: 5px;
+    bottom: 8px;
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 4px;
+    border-radius: 2px;
 }

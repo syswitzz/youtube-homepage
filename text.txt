@@ -67,6 +67,36 @@ on window resizing then use left right and for fixed use width or height
 
 since the content will get covered by the header/fixed element, we use PADDING in the body tag
 
+position: absolute; is almost same as fixed, the same top, left right bottom attributes work
+
+position: fixed - placed in the browser window (will stay there even if you scroll)
+position: absolute - placed on the page (it will start to move up with the page as you scroll)
+
+now the issue with position element is that when two elements overlap, the element defined below
+will overshadow the element defined first. to overcome this:
+z-index: 1; - which means the z-index of element defined first is higher so it will overshadow the 
+element defined later on
+
+whenever position: absolute; element is inside position: fixed; element its (top, left, bottom etc) is
+gonna be relative to the position: fixed; element and not the page (which is the normal case scenario)
+
+as of now we have fixed and absolute which moves as we scroll but what if we want to design something
+like the duration in yt thumbnail, it is fixed on the thumbnail yet moves as we scroll along with thumbnail
+for that we use position: relative; because position: fixed; ke andar absolute dalenge to wo absolute wala
+bhi usme fix hi ho jayega and itll not move as wel scroll.
+
+position: relative; - displays the element as normal except if we put position absolute here
+itll position it relative to the element instead of the page
+
+the rule of which element was written first do not apply to position: static; which is default
+but apart from static it applies to any other positon
+
+div just creates a box for whatevers inside so we can create a div and use postiion: relative and absolute
+
+
+
+
+
 
 .thumbnail{
     width: 300px;   /*the heigh will auto adjust*/
