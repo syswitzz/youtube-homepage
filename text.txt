@@ -52,10 +52,20 @@ width: 0; - it makes the search bar (which has fix minimum width by default) shr
 
 overflow: hidden; - makes the box/element content flowing outside curved body disappear
 
+whenever we see an element on top of another element thats using CSS POSITON. it adds another dimension to our page
 
+position: static; is the default as if it wasnt there
 
+position: fixed; element no longer takes space on the page its floating above the page
 
+top: 20px; distance from top of the browser window
+left: 0px;
 
+when left and right are used simultaneously the element will stretch to satisfy both
+we can use top left etc along with width and height. if we wanna resize the element based
+on window resizing then use left right and for fixed use width or height
+
+since the content will get covered by the header/fixed element, we use PADDING in the body tag
 
 
 .thumbnail{
