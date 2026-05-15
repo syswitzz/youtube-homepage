@@ -93,6 +93,13 @@ but apart from static it applies to any other positon
 
 div just creates a box for whatevers inside so we can create a div and use postiion: relative and absolute
 
+tooltip - we can use opacity:0; and hover properties to make tooltips.
+pointer-events: none; - disables hovering etc.
+transition: which howlong:
+white-space: nowrap; used when text is wrapping around and not in single line
+
+
+
 
 
 
