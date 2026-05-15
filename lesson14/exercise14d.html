@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>
+            Modal - Exercise 14D
+        </title>
+    </head>
+    <body style="height: 4000px; background-color: white;">
+        <div style="
+            background-color: black;
+            color: white;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+        ">
+            bottom-left
+        </div>
+
+        <div style="
+            position: fixed;
+            background-color: lightgreen;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 100px;
+        ">
+            right sidebar
+        </div>
+
+
+        <!--element that covers the entire page - OVERLAY-->
+        <div style="
+            background-color: rgba(0,0,0,0.3);
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        ">
+            <div style="
+                font-family: Roboto, Arial;
+                background-color: white;
+                color: black;
+                width: 400px;
+                border-radius: 10px;
+                padding-left: 20px;
+                padding-bottom: 20px;
+            ">
+                <h1>Modal title</h1>
+                <p>This is a modal</p>
+                <button>Close</button>
+            </div>
+            
+        </div>
+
+    </body>
+</html>

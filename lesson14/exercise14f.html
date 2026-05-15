@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Double Sidebar - Exercise 14F</title>
+        <style>
+            p {
+                font-family: Roboto, Arial;
+                margin: 0;
+                font-size: 12px;
+            }
+            .pfp-sidebar {
+                position: fixed;
+                bottom: 0;
+                top: 0;
+                left: 0;
+                width: 60px;
+                background-color: rgb(41, 41, 41);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: start;
+                padding-top: 6px;
+            }
+            .info-sidebar {
+                position: fixed;
+                bottom: 0;
+                top: 0;
+                left: 60;
+                width: 150px;
+                background-color: rgb(59, 59, 59);
+            }
+            .pfp-image {
+                height: 42px;
+                width: 42px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-top: 8px;
+            }
+            .info-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 14px 14px;
+                color: white;
+                font-weight: bold;
+                padding-bottom: 6px;
+            }
+            .plus-text {
+                font-size: 18px;
+                color: rgb(155, 155, 155);
+            }
+            .para-text {
+                color: rgb(154, 154, 154);
+                margin-left: 20px;
+                line-height: 25px;
+            }
+        </style>
+    </head>
+     <body>
+        <div class="pfp-sidebar">
+            <img class="pfp-image" src="/exercise-images/cat.jpg" alt="cat">
+            <img class="pfp-image" src="/exercise-images/cat2.jpg" alt="cat2">
+            <img class="pfp-image" src="/exercise-images/dog.jpg" alt="d0g">
+        </div>
+        <div class="info-sidebar">
+            <div class="info-container">
+                <p>INFO</p>
+                <p class="plus-text">+</p>
+            </div>
+
+            <p class="para-text"># new-videos</p>
+            <p class="para-text"># updates</p>
+            <p class="para-text"># faq</p>
+        </div>
+     </body>
+</html>

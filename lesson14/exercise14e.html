@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Facebook Header - Exercise 14E</title>
+        <style>
+            p {
+                margin: 0;
+                font-family: Roboto, Arial;
+            }
+            .pfp {
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 10px;
+            }
+            .name {
+                font-weight: bold;
+            }
+            .add-friend-button {
+                background-color: rgb(66, 91, 214);
+                color: white;
+                border: 0px;
+                border-radius: 4px;
+                padding: 6px 10px;
+                margin-right: 10px;
+            }
+            .message-button {
+                background-color: rgb(205, 205, 205);
+                color: black;
+                border: 0px;
+                border-radius: 4px;
+                padding: 6px 10px;
+            }
+            .container {
+                display: flex;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        ">
+            <div class="container">
+                <img class="pfp" src="/exercise-images/cat.jpg" alt="cat pfp">
+                <p class="name">Oliver Cat</p>
+            </div>
+            <div class="container">
+                <button class="add-friend-button">Add Friend</button>
+                <button class="message-button">Message</button>
+            </div>
+        </div>
+    </body>
+</html>

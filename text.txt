@@ -80,7 +80,7 @@ element defined later on
 whenever position: absolute; element is inside position: fixed; element its (top, left, bottom etc) is
 gonna be relative to the position: fixed; element and not the page (which is the normal case scenario)
 
-as of now we have fixed and absolute which moves as we scroll but what if we want to design something
+as of now we have fixed and absolute which doesnt move as we scroll but what if we want to design something
 like the duration in yt thumbnail, it is fixed on the thumbnail yet moves as we scroll along with thumbnail
 for that we use position: relative; because position: fixed; ke andar absolute dalenge to wo absolute wala
 bhi usme fix hi ho jayega and itll not move as wel scroll.
